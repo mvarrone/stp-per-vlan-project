@@ -1,0 +1,1 @@
+[{"SW2": {"interfaces": ["G 0/0"]}}, {"SW3": {"interfaces": ["G 0/1"]}}, {"SW1": {"interfaces": ["G 0/2", "G 1/0"]}}]

@@ -1,0 +1,1 @@
+[{"from": 0, "to": 4, "label": "SW2 <-> SW1"}, {"from": 0, "to": 3, "label": "SW2 <-> SW3"}, {"from": 1, "to": 2, "label": "SW5 <-> SW4"}, {"from": 2, "to": 3, "label": "SW4 <-> SW3"}, {"from": 3, "to": 4, "label": "SW3 <-> SW1"}]

@@ -1,0 +1,239 @@
+{
+  "nodes": [
+    {
+      "id": 4,
+      "label": "SW1",
+      "level": 0,
+      "title": "SVI: 192.168.150.131\nPlatform: cisco_ios\nLevel: 0\nPriority: 32769\nMAC Address: 5003.9700.0100\nCost to RB: 0",
+      "priority": 32769,
+      "mac_address": "5003.9700.0100",
+      "cost_to_root_bridge": 0
+    },
+    {
+      "id": 0,
+      "label": "SW2",
+      "level": 1,
+      "title": "SVI: 192.168.150.132\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 50e2.3d00.0200\nCost to RB: 4",
+      "priority": 32769,
+      "mac_address": "50e2.3d00.0200",
+      "cost_to_root_bridge": 4
+    },
+    {
+      "id": 2,
+      "label": "SW3",
+      "level": 1,
+      "title": "SVI: 192.168.150.133\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 5044.ee00.0d00\nCost to RB: 4",
+      "priority": 32769,
+      "mac_address": "5044.ee00.0d00",
+      "cost_to_root_bridge": 4
+    },
+    {
+      "id": 3,
+      "label": "SW4",
+      "level": 1,
+      "title": "SVI: 192.168.150.134\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 508a.d700.0e00\nCost to RB: 4",
+      "priority": 32769,
+      "mac_address": "508a.d700.0e00",
+      "cost_to_root_bridge": 4
+    },
+    {
+      "id": 1,
+      "label": "SW5",
+      "level": 1,
+      "title": "SVI: 192.168.150.135\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 5051.af00.0f00\nCost to RB: 4",
+      "priority": 32769,
+      "mac_address": "5051.af00.0f00",
+      "cost_to_root_bridge": 4
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 4,
+      "title": "SW2: G 0/0\n\u21c6\nSW1: G 0/1"
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "title": "SW5: G 0/1\n\u21c6\nSW1: G 1/0"
+    },
+    {
+      "from": 2,
+      "to": 4,
+      "title": "SW3: G 0/0\n\u21c6\nSW1: G 0/2"
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "title": "SW4: G 0/0\n\u21c6\nSW1: G 0/3"
+    }
+  ],
+  "edges_with_blocked_links": [
+    {
+      "from": 0,
+      "to": 4,
+      "title": "SW2: G 0/0\n\u21c6\nSW1: G 0/1"
+    },
+    {
+      "from": 0,
+      "to": 2,
+      "title": "SW2: G 0/1\n\u21c6\nSW3: G 1/0",
+      "color": {
+        "color": "red"
+      },
+      "dashes": true,
+      "smooth": {
+        "type": "curvedCW",
+        "roundness": 0.55
+      }
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "title": "SW5: G 0/1\n\u21c6\nSW1: G 1/0"
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "title": "SW5: G 0/2\n\u21c6\nSW3: G 0/1",
+      "color": {
+        "color": "red"
+      },
+      "dashes": true,
+      "smooth": {
+        "type": "curvedCW",
+        "roundness": 0.55
+      }
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "title": "SW5: G 0/0\n\u21c6\nSW4: G 0/3",
+      "color": {
+        "color": "red"
+      },
+      "dashes": true,
+      "smooth": {
+        "type": "curvedCW",
+        "roundness": 0.55
+      }
+    },
+    {
+      "from": 2,
+      "to": 4,
+      "title": "SW3: G 0/0\n\u21c6\nSW1: G 0/2"
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "title": "SW3: G 1/2\n\u21c6\nSW4: G 1/1",
+      "color": {
+        "color": "red"
+      },
+      "dashes": true,
+      "smooth": {
+        "type": "curvedCW",
+        "roundness": 0.55
+      }
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "title": "SW4: G 0/0\n\u21c6\nSW1: G 0/3"
+    }
+  ],
+  "blocked_interfaces": [
+    {
+      "SW2": {
+        "interfaces": [
+          "G 0/1"
+        ]
+      }
+    },
+    {
+      "SW5": {
+        "interfaces": [
+          "G 0/2"
+        ]
+      }
+    },
+    {
+      "SW4": {
+        "interfaces": [
+          "G 0/3",
+          "G 1/1"
+        ]
+      }
+    }
+  ],
+  "results": [
+    {
+      "device": "192.168.150.132",
+      "device_type": "cisco_ios",
+      "id": 0,
+      "label": "SW2",
+      "level": 1,
+      "priority": 32769,
+      "mac_address": "50e2.3d00.0200",
+      "cost_to_root_bridge": 4,
+      "version": "15.2(4.0.55)E",
+      "serial": "97V5B2KQUD7",
+      "uptime": "1 hour, 49 minutes"
+    },
+    {
+      "device": "192.168.150.135",
+      "device_type": "cisco_ios",
+      "id": 1,
+      "label": "SW5",
+      "level": 1,
+      "priority": 32769,
+      "mac_address": "5051.af00.0f00",
+      "cost_to_root_bridge": 4,
+      "version": "15.2(4.0.55)E",
+      "serial": "9XMKG0EFXXE",
+      "uptime": "2 hours, 12 minutes"
+    },
+    {
+      "device": "192.168.150.133",
+      "device_type": "cisco_ios",
+      "id": 2,
+      "label": "SW3",
+      "level": 1,
+      "priority": 32769,
+      "mac_address": "5044.ee00.0d00",
+      "cost_to_root_bridge": 4,
+      "version": "15.2(4.0.55)E",
+      "serial": "90YFP8E7XNY",
+      "uptime": "2 hours, 11 minutes"
+    },
+    {
+      "device": "192.168.150.134",
+      "device_type": "cisco_ios",
+      "id": 3,
+      "label": "SW4",
+      "level": 1,
+      "priority": 32769,
+      "mac_address": "508a.d700.0e00",
+      "cost_to_root_bridge": 4,
+      "version": "15.2(4.0.55)E",
+      "serial": "9AEHQV4S9P2",
+      "uptime": "2 hours, 11 minutes"
+    },
+    {
+      "device": "192.168.150.131",
+      "device_type": "cisco_ios",
+      "id": 4,
+      "label": "SW1",
+      "level": 0,
+      "priority": 32769,
+      "mac_address": "5003.9700.0100",
+      "cost_to_root_bridge": 0,
+      "version": "15.2(4.0.55)E",
+      "serial": "94W3X51CCZR",
+      "uptime": "1 hour, 49 minutes"
+    }
+  ],
+  "error": false,
+  "error_description": "",
+  "vlan_id": 1
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 4,
+    "label": "SW1",
+    "level": 0,
+    "title": "SVI: 192.168.150.131\nPlatform: cisco_ios\nLevel: 0\nPriority: 32769\nMAC Address: 5003.9700.0100\nCost to RB: 0",
+    "priority": 32769,
+    "mac_address": "5003.9700.0100",
+    "cost_to_root_bridge": 0
+  },
+  {
+    "id": 0,
+    "label": "SW2",
+    "level": 1,
+    "title": "SVI: 192.168.150.132\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 50e2.3d00.0200\nCost to RB: 4",
+    "priority": 32769,
+    "mac_address": "50e2.3d00.0200",
+    "cost_to_root_bridge": 4
+  },
+  {
+    "id": 2,
+    "label": "SW3",
+    "level": 1,
+    "title": "SVI: 192.168.150.133\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 5044.ee00.0d00\nCost to RB: 4",
+    "priority": 32769,
+    "mac_address": "5044.ee00.0d00",
+    "cost_to_root_bridge": 4
+  },
+  {
+    "id": 3,
+    "label": "SW4",
+    "level": 1,
+    "title": "SVI: 192.168.150.134\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 508a.d700.0e00\nCost to RB: 4",
+    "priority": 32769,
+    "mac_address": "508a.d700.0e00",
+    "cost_to_root_bridge": 4
+  },
+  {
+    "id": 1,
+    "label": "SW5",
+    "level": 1,
+    "title": "SVI: 192.168.150.135\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 5051.af00.0f00\nCost to RB: 4",
+    "priority": 32769,
+    "mac_address": "5051.af00.0f00",
+    "cost_to_root_bridge": 4
+  }
+]

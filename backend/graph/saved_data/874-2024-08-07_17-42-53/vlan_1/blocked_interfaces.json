@@ -1,0 +1,24 @@
+[
+  {
+    "SW2": {
+      "interfaces": [
+        null
+      ]
+    }
+  },
+  {
+    "SW5": {
+      "interfaces": [
+        null
+      ]
+    }
+  },
+  {
+    "SW4": {
+      "interfaces": [
+        null,
+        null
+      ]
+    }
+  }
+]

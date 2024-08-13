@@ -1,0 +1,74 @@
+[
+  {
+    "from": 0,
+    "to": 4,
+    "title": "SW3: G 0/0\n\u21c6\nSW1: None"
+  },
+  {
+    "from": 0,
+    "to": 1,
+    "title": "SW3: G 1/0\n\u21c6\nSW2: None",
+    "color": {
+      "color": "red"
+    },
+    "dashes": true,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.55
+    }
+  },
+  {
+    "from": 0,
+    "to": 2,
+    "title": "SW3: G 1/2\n\u21c6\nSW4: None",
+    "color": {
+      "color": "red"
+    },
+    "dashes": true,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.55
+    }
+  },
+  {
+    "from": 0,
+    "to": 3,
+    "title": "SW3: G 0/1\n\u21c6\nSW5: None",
+    "color": {
+      "color": "red"
+    },
+    "dashes": true,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.55
+    }
+  },
+  {
+    "from": 1,
+    "to": 4,
+    "title": "SW2: G 0/0\n\u21c6\nSW1: None"
+  },
+  {
+    "from": 3,
+    "to": 4,
+    "title": "SW5: G 0/1\n\u21c6\nSW1: None"
+  },
+  {
+    "from": 3,
+    "to": 2,
+    "title": "SW5: G 0/0\n\u21c6\nSW4: None",
+    "color": {
+      "color": "red"
+    },
+    "dashes": true,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.55
+    }
+  },
+  {
+    "from": 2,
+    "to": 4,
+    "title": "SW4: G 0/0\n\u21c6\nSW1: None"
+  }
+]

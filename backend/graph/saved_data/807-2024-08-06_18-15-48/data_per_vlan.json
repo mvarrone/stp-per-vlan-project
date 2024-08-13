@@ -1,0 +1,245 @@
+[
+  {
+    "nodes": [
+      {
+        "id": 3,
+        "label": "SW5",
+        "level": 0,
+        "title": "SVI: 192.168.150.135\nPlatform: cisco_ios\nLevel: 0\nPriority: 32769\nMAC Address: 501d.cc00.0f00\nCost to RB: 0",
+        "priority": 32769,
+        "mac_address": "501d.cc00.0f00",
+        "cost_to_root_bridge": 0
+      },
+      {
+        "id": 4,
+        "label": "SW1",
+        "level": 1,
+        "title": "SVI: 192.168.150.131\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 5075.3f00.0100\nCost to RB: 4",
+        "priority": 32769,
+        "mac_address": "5075.3f00.0100",
+        "cost_to_root_bridge": 4
+      },
+      {
+        "id": 1,
+        "label": "SW3",
+        "level": 1,
+        "title": "SVI: 192.168.150.133\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 50a8.9b00.0d00\nCost to RB: 4",
+        "priority": 32769,
+        "mac_address": "50a8.9b00.0d00",
+        "cost_to_root_bridge": 4
+      },
+      {
+        "id": 2,
+        "label": "SW4",
+        "level": 1,
+        "title": "SVI: 192.168.150.134\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 5062.4300.0e00\nCost to RB: 4",
+        "priority": 32769,
+        "mac_address": "5062.4300.0e00",
+        "cost_to_root_bridge": 4
+      },
+      {
+        "id": 0,
+        "label": "SW2",
+        "level": 2,
+        "title": "SVI: 192.168.150.132\nPlatform: cisco_ios\nLevel: 2\nPriority: 32769\nMAC Address: 505a.5d00.0200\nCost to RB: 8",
+        "priority": 32769,
+        "mac_address": "505a.5d00.0200",
+        "cost_to_root_bridge": 8
+      }
+    ],
+    "edges": [
+      {
+        "from": 0,
+        "to": 4,
+        "title": "SW2: G 0/0\n\u21c6\nSW1: G 0/1"
+      },
+      {
+        "from": 1,
+        "to": 3,
+        "title": "SW3: G 0/1\n\u21c6\nSW5: G 0/2"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "title": "SW4: G 0/3\n\u21c6\nSW5: G 0/0"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "title": "SW5: G 0/1\n\u21c6\nSW1: G 1/0"
+      }
+    ],
+    "edges_with_blocked_links": [
+      {
+        "from": 0,
+        "to": 4,
+        "title": "SW2: G 0/0\n\u21c6\nSW1: G 0/1"
+      },
+      {
+        "from": 0,
+        "to": 1,
+        "title": "SW2: G 0/1\n\u21c6\nSW3: G 1/0",
+        "color": {
+          "color": "red"
+        },
+        "dashes": true,
+        "smooth": {
+          "type": "curvedCW",
+          "roundness": 0.7
+        },
+        "label": "X"
+      },
+      {
+        "from": 1,
+        "to": 4,
+        "title": "SW3: G 0/0\n\u21c6\nSW1: G 0/2",
+        "color": {
+          "color": "red"
+        },
+        "dashes": true,
+        "smooth": {
+          "type": "curvedCW",
+          "roundness": 0.7
+        },
+        "label": "X"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "title": "SW3: G 1/2\n\u21c6\nSW4: G 1/1",
+        "color": {
+          "color": "red"
+        },
+        "dashes": true,
+        "smooth": {
+          "type": "curvedCW",
+          "roundness": 0.7
+        },
+        "label": "X"
+      },
+      {
+        "from": 1,
+        "to": 3,
+        "title": "SW3: G 0/1\n\u21c6\nSW5: G 0/2"
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "title": "SW4: G 0/0\n\u21c6\nSW1: G 0/3",
+        "color": {
+          "color": "red"
+        },
+        "dashes": true,
+        "smooth": {
+          "type": "curvedCW",
+          "roundness": 0.7
+        },
+        "label": "X"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "title": "SW4: G 0/3\n\u21c6\nSW5: G 0/0"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "title": "SW5: G 0/1\n\u21c6\nSW1: G 1/0"
+      }
+    ],
+    "blocked_interfaces": [
+      {
+        "SW2": {
+          "interfaces": [
+            "G 0/1"
+          ]
+        }
+      },
+      {
+        "SW3": {
+          "interfaces": [
+            "G 0/0",
+            "G 1/2"
+          ]
+        }
+      },
+      {
+        "SW1": {
+          "interfaces": [
+            "G 0/3"
+          ]
+        }
+      }
+    ],
+    "results": [
+      {
+        "device": "192.168.150.132",
+        "device_type": "cisco_ios",
+        "id": 0,
+        "label": "SW2",
+        "level": 2,
+        "priority": 32769,
+        "mac_address": "505a.5d00.0200",
+        "cost_to_root_bridge": 8,
+        "version": "15.2(4.0.55)E",
+        "serial": "97V5B2KQUD7",
+        "uptime": "7 hours, 21 minutes"
+      },
+      {
+        "device": "192.168.150.133",
+        "device_type": "cisco_ios",
+        "id": 1,
+        "label": "SW3",
+        "level": 1,
+        "priority": 32769,
+        "mac_address": "50a8.9b00.0d00",
+        "cost_to_root_bridge": 4,
+        "version": "15.2(4.0.55)E",
+        "serial": "90YFP8E7XNY",
+        "uptime": "7 hours, 17 minutes"
+      },
+      {
+        "device": "192.168.150.134",
+        "device_type": "cisco_ios",
+        "id": 2,
+        "label": "SW4",
+        "level": 1,
+        "priority": 32769,
+        "mac_address": "5062.4300.0e00",
+        "cost_to_root_bridge": 4,
+        "version": "15.2(4.0.55)E",
+        "serial": "9AEHQV4S9P2",
+        "uptime": "7 hours, 18 minutes"
+      },
+      {
+        "device": "192.168.150.135",
+        "device_type": "cisco_ios",
+        "id": 3,
+        "label": "SW5",
+        "level": 0,
+        "priority": 32769,
+        "mac_address": "501d.cc00.0f00",
+        "cost_to_root_bridge": 0,
+        "version": "15.2(4.0.55)E",
+        "serial": "9XMKG0EFXXE",
+        "uptime": "7 hours, 18 minutes"
+      },
+      {
+        "device": "192.168.150.131",
+        "device_type": "cisco_ios",
+        "id": 4,
+        "label": "SW1",
+        "level": 1,
+        "priority": 32769,
+        "mac_address": "5075.3f00.0100",
+        "cost_to_root_bridge": 4,
+        "version": "15.2(4.0.55)E",
+        "serial": "94W3X51CCZR",
+        "uptime": "7 hours, 17 minutes"
+      }
+    ],
+    "error": false,
+    "error_description": "",
+    "vlan_id": 1
+  }
+]

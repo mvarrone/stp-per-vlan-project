@@ -1,0 +1,11 @@
+[
+  {
+    "id": 0,
+    "label": "SW2",
+    "level": 0,
+    "title": "SVI: 192.168.150.132\nPlatform: cisco_ios\nLevel: 0\nPriority: 32769\nMAC Address: 502c.4200.0200\nCost to RB: 0",
+    "priority": 32769,
+    "mac_address": "502c.4200.0200",
+    "cost_to_root_bridge": 0
+  }
+]

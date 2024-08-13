@@ -1,0 +1,67 @@
+[
+  {
+    "device": "192.168.150.132",
+    "device_type": "cisco_ios",
+    "id": 0,
+    "label": "SW2",
+    "level": 1,
+    "priority": 32769,
+    "mac_address": "50e2.3d00.0200",
+    "cost_to_root_bridge": 4,
+    "version": "15.2(4.0.55)E",
+    "serial": "97V5B2KQUD7",
+    "uptime": "56 minutes"
+  },
+  {
+    "device": "192.168.150.133",
+    "device_type": "cisco_ios",
+    "id": 1,
+    "label": "SW3",
+    "level": 1,
+    "priority": 32769,
+    "mac_address": "5044.ee00.0d00",
+    "cost_to_root_bridge": 4,
+    "version": "15.2(4.0.55)E",
+    "serial": "90YFP8E7XNY",
+    "uptime": "1 hour, 18 minutes"
+  },
+  {
+    "device": "192.168.150.135",
+    "device_type": "cisco_ios",
+    "id": 2,
+    "label": "SW5",
+    "level": 1,
+    "priority": 32769,
+    "mac_address": "5051.af00.0f00",
+    "cost_to_root_bridge": 4,
+    "version": "15.2(4.0.55)E",
+    "serial": "9XMKG0EFXXE",
+    "uptime": "1 hour, 19 minutes"
+  },
+  {
+    "device": "192.168.150.134",
+    "device_type": "cisco_ios",
+    "id": 3,
+    "label": "SW4",
+    "level": 1,
+    "priority": 32769,
+    "mac_address": "508a.d700.0e00",
+    "cost_to_root_bridge": 4,
+    "version": "15.2(4.0.55)E",
+    "serial": "9AEHQV4S9P2",
+    "uptime": "1 hour, 17 minutes"
+  },
+  {
+    "device": "192.168.150.131",
+    "device_type": "cisco_ios",
+    "id": 4,
+    "label": "SW1",
+    "level": 0,
+    "priority": 32769,
+    "mac_address": "5003.9700.0100",
+    "cost_to_root_bridge": 0,
+    "version": "15.2(4.0.55)E",
+    "serial": "94W3X51CCZR",
+    "uptime": "55 minutes"
+  }
+]

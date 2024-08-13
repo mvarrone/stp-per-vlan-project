@@ -1,0 +1,42 @@
+[
+    {
+        "id": 4,
+        "label": "SW1",
+        "level": 0,
+        "title": "SVI: 192.168.150.131\nPlatform: cisco_ios\nLevel: 0\nPriority: 32769\nMAC Address: 502d.1000.0100",
+        "priority": "32769",
+        "mac_address": "502d.1000.0100"
+    },
+    {
+        "id": 0,
+        "label": "SW2",
+        "level": 1,
+        "title": "SVI: 192.168.150.132\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 502f.cf00.0200",
+        "priority": "32769",
+        "mac_address": "502f.cf00.0200"
+    },
+    {
+        "id": 1,
+        "label": "SW3",
+        "level": 1,
+        "title": "SVI: 192.168.150.133\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 503f.fd00.0d00",
+        "priority": "32769",
+        "mac_address": "503f.fd00.0d00"
+    },
+    {
+        "id": 2,
+        "label": "SW4",
+        "level": 1,
+        "title": "SVI: 192.168.150.134\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 50b8.7400.0e00",
+        "priority": "32769",
+        "mac_address": "50b8.7400.0e00"
+    },
+    {
+        "id": 3,
+        "label": "SW5",
+        "level": 1,
+        "title": "SVI: 192.168.150.135\nPlatform: cisco_ios\nLevel: 1\nPriority: 32769\nMAC Address: 50a9.9200.0f00",
+        "priority": "32769",
+        "mac_address": "50a9.9200.0f00"
+    }
+]
